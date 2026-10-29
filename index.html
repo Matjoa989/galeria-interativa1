@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenco do São Paulo FC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <a href="https://www.saopaulofc.net/esporte/futebol-masculino-profissional/" class="sigla">SPFC</a>
+        <h1>Elenco do São Paulo</h1>
+        <p>Conheça alguns jogadores do Tricolor Paulista</p>
+    </header>
+
+    <main class="conteudo">
+        <section class="filtros" aria-label="Filtrar jogadores por posição">
+            <button class="filtro ativo" data-filtro="todos">Todos</button>
+            <button class="filtro" data-filtro="ataque">Ataque</button>
+            <button class="filtro" data-filtro="meio">Meio-campo</button>
+            <button class="filtro" data-filtro="defesa">Defesa</button>
+        </section>
+
+        <p id="quantidade" class="quantidade">9 jogadores encontrados</p>
+
+        <section class="galeria" id="galeria">
+            <button class="card destaque" data-categoria="ataque"
+                data-nome="Jonathan Calleri" data-posicao="Ataque" data-numero="9"
+                data-descricao="Centroavante argentino conhecido pela entrega e presença na área."
+                data-local="MorumBIS - São Paulo, SP">
+                <img src="img/foto1.png" alt="Imagem ilustrativa de Jonathan Calleri">
+                <span class="numero">9</span>
+                <span class="nome">Jonathan Calleri</span>
+                <span class="posicao">Ataque</span>
+            </button>
+
+            <button class="card horizontal" data-categoria="ataque"
+                data-nome="Luciano" data-posicao="Ataque" data-numero="10"
+                data-descricao="Atacante que também ajuda na criação das jogadas."
+                data-local="MorumBIS - São Paulo, SP">
+                <img src="img/foto2.png" alt="Imagem ilustrativa de Luciano">
+                <span class="numero">10</span>
+                <span class="nome">Luciano</span>
+                <span class="posicao">Ataque</span>
+            </button>
+
+            <button class="card" data-categoria="ataque"
+                data-nome="Ferreirinha" data-posicao="Ataque" data-numero="11"
+                data-descricao="Atacante de velocidade que atua pelos lados do campo."
+                data-local="MorumBIS - São Paulo, SP">
+                <img src="img/foto3.png" alt="Ferreirinha com a camisa do São Paulo" loading="lazy">
+                <span class="numero">11</span>
+                <span class="nome">Ferreirinha</span>
+                <span class="posicao">Ataque</span>
+            </button>
+
+            <button class="card vertical" data-categoria="meio"
+                data-nome="Marcos Antônio" data-posicao="Meio-campo" data-numero="8"
+                data-descricao="Meio-campista que participa da saída de bola e da criação."
+                data-local="MorumBIS - São Paulo, SP">
+                <img src="img/foto4.png" alt="Marcos Antônio com a camisa do São Paulo" loading="lazy">
+                <span class="numero">8</span>
+                <span class="nome">Marcos Antônio</span>
+                <span class="posicao">Meio-campo</span>
+            </button>
+
+            <button class="card" data-categoria="ataque"
+                data-nome="Lucas Moura" data-posicao="Ataque" data-numero="7"
+                data-descricao="atacante, conhecido pela velocidade, drible e identificação histórica com o clube."
+                data-local="MorumBIS - São Paulo, SP">
+                <img src="img/foto5.png" alt="Lucas Moura com a camisa do São Paulo" loading="lazy">
+                <span class="numero">7</span>
+                <span class="nome">Lucas Moura</span>
+                <span class="posicao">Ataque</span>
+            </button>
+
+            <button class="card horizontal" data-categoria="meio"
+                data-nome="Damián Bobadilla" data-posicao="Meio-campo" data-numero="16"
+                data-descricao="Meio-campista paraguaio do elenco tricolor."
+                data-local="MorumBIS - São Paulo, SP">
+                <img src="img/foto6.png" alt="Damián Bobadilla com a camisa do São Paulo" loading="lazy">
+                <span class="numero">16</span>
+                <span class="nome">Damián Bobadilla</span>
+                <span class="posicao">Meio-campo</span>
+            </button>
+
+            <button class="card" data-categoria="defesa"
+                data-nome="Robert Arboleda" data-posicao="Defesa" data-numero="5"
+                data-descricao="Zagueiro equatoriano que atua na defesa são-paulina."
+                data-local="MorumBIS - São Paulo, SP">
+                <img src="img/foto7.png" alt="Robert Arboleda com a camisa do São Paulo" loading="lazy">
+                <span class="numero">5</span>
+                <span class="nome">Robert Arboleda</span>
+                <span class="posicao">Defesa</span>
+            </button>
+
+            <button class="card" data-categoria="defesa"
+                data-nome="Wendell" data-posicao="Defesa" data-numero="18"
+                data-descricao="Lateral que atua pelo lado esquerdo da defesa."
+                data-local="MorumBIS - São Paulo, SP">
+                <img src="img/foto8.png" alt="Imagem ilustrativa de Wendell" loading="lazy">
+                <span class="numero">18</span>
+                <span class="nome">Wendell</span>
+                <span class="posicao">Defesa</span>
+            </button>
+
+            <button class="card horizontal" data-categoria="defesa"
+                data-nome="Domingos Duarte" data-posicao="Defesa" data-numero="2"
+                data-descricao="Zagueiro experiente que faz parte do elenco do São Paulo."
+                data-local="MorumBIS - São Paulo, SP">
+                <img src="img/foto9.png" alt="Imagem ilustrativa de Rafael Tolói" loading="lazy">
+                <span class="numero">22</span>
+                <span class="nome">Domingos Duarte</span>
+                <span class="posicao">Defesa</span>
+            </button>
+        </section>
+    </main>
+
+    <div class="fundo-modal" id="fundo-modal" aria-hidden="true">
+        <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-nome">
+            <button class="fechar" id="fechar" aria-label="Fechar janela">&times;</button>
+            <img id="modal-imagem" src="" alt="">
+            <div class="info-modal">
+                <p class="tag" id="modal-posicao"></p>
+                <h2 id="modal-nome"></h2>
+                <p id="modal-descricao"></p>
+                <p><strong>Camisa:</strong> <span id="modal-numero"></span></p>
+                <p><strong>Local:</strong> <span id="modal-local"></span></p>
+                <p class="contador" id="contador">1 de 9</p>
+                <div class="navegacao">
+                    <button id="anterior">Anterior</button>
+                    <button id="proximo">Próximo</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>Para conhecer mais o elenco do tricolor clique na sigla SPFC no começo do site.</footer>
+    <script src="script.js"></script>
+</body>
+</html>
